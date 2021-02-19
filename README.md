@@ -114,7 +114,7 @@ python manage.py runserver
 * URL: http://localhost:8000/api/answer/create/[Poll_ID]/
 * Headers:
 	* Authorization: Token 'userToken'
-*Body:
+* Body:
 	* text{0,1,2,4....}: If the question type is "Text Answer", then depending on the number of questions, the number after the "text" will increase 
 	* name: If the question type is "One Choice" 
 	* choice{0,1,2,3,4....}: If the question type is "Many Choice", then depending on the number of choices, the number after the "choice" will increase
