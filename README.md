@@ -2,7 +2,7 @@
 
 Задача: спроектировать и разработать API для системы опросов пользователей.
 
-#Installation guide
+# Installation guide
 
 ```bash
 pip install -r requirements.txt
@@ -12,38 +12,38 @@ python manage.py createsuperuser
 python manage.py runserver
 ```
 
-#API documentation
+# API documentation
 
-###Login
+### Login
 * Request method: GET
-* URL: [http://localhost:8000/api/login/](http://localhost:8000/api/login/)
+* URL: http://localhost:8000/api/login/
 * Body:
-      *username: Username user
-      *password: Password user
+      * username: Username user
+      * password: Password user
 
 
-###Create Poll
+### Create Poll
 * Request method: POST
 * URL: [http://localhost:8000/api/poll/create/](http://localhost:8000/api/poll/create/)
 * Headers:
-			*Authorization: Token 'userToken'
+	* Authorization: Token 'userToken'
 * Body:
-      *name: Name of poll
-      *date_end: Poll end date, format: YYYY-MM-DD HH:MM:SS
-			*description: Description of poll
+	* name: Name of poll
+	* date_end: Poll end date, format: YYYY-MM-DD HH:MM:SS
+	*description: Description of poll
 
 
-###Update Poll
+### Update Poll
 * Request method: PUT
 * URL: [http://localhost:8000/api/poll/update/<Poll ID>/](http://localhost:8000/api/poll/update/<Poll ID>/)
 * Headers:
-			*Authorization: Token 'userToken'
+	*Authorization: Token 'userToken'
 * Body:
-      *name: Name of poll
-			*description: Description of poll
+	* name: Name of poll
+	* description: Description of poll
 			
 
-###Delete Poll
+### Delete Poll
 * Request method: DELETE
 * URL: [http://localhost:8000/api/poll/delete/<Poll ID>/](http://localhost:8000/api/poll/delete/<Poll ID>/)
 * Headers:
