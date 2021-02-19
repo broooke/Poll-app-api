@@ -18,8 +18,8 @@ python manage.py runserver
 * Request method: GET
 * URL: http://localhost:8000/api/login/
 * Body:
-      * username: Username user
-      * password: Password user
+	* username: Username user
+	* password: Password user
 
 
 ### Create Poll
