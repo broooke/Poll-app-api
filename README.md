@@ -35,7 +35,7 @@ python manage.py runserver
 
 ### Update Poll
 * Request method: PUT
-* URL: http://localhost:8000/api/poll/update/[Poll ID]/
+* URL: http://localhost:8000/api/poll/update/[Poll_ID]/
 * Headers:
 	* Authorization: Token 'userToken'
 * Body:
@@ -45,14 +45,14 @@ python manage.py runserver
 
 ### Delete Poll
 * Request method: DELETE
-* URL: http://localhost:8000/api/poll/delete/[Poll ID]/
+* URL: http://localhost:8000/api/poll/delete/[Poll_ID]/
 * Headers:
 	* Authorization: Token 'userToken'
 
 
 ### Create Question
 * Request method: POST
-* URL: http://localhost:8000/api/question/create/[Poll ID]/
+* URL: http://localhost:8000/api/question/create/[Poll_ID]/
 * Headers:
 	* Authorization: Token 'userToken'
 * Body:
@@ -62,7 +62,7 @@ python manage.py runserver
 
 ### Update Question
 * Request method: PUT
-* URL: http://localhost:8000/api/question/update/[Question ID]/
+* URL: http://localhost:8000/api/question/update/[Question_ID]/
 * Headers:
 	* Authorization: Token 'userToken'
 * Body:
@@ -72,14 +72,14 @@ python manage.py runserver
 			
 ### Delete Question
 * Request method: DELETE
-* URL: http://localhost:8000/api/question/delete/<Question ID>/
+* URL: http://localhost:8000/api/question/delete/[Question_ID]/
 * Headers:
 	* Authorization: Token 'userToken'
 
 
 ### Create Choice
 * Request method: POST
-* URL: http://localhost:8000/api/choice/create/<Question ID>/
+* URL: http://localhost:8000/api/choice/create/[Question_ID]/
 * Headers:
 	* Authorization: Token 'userToken'
 * Body:
@@ -88,7 +88,7 @@ python manage.py runserver
 
 ### Update Choice
 * Request method: PUT
-* URL: http://localhost:8000/api/choice/update/<Choice ID>/
+* URL: http://localhost:8000/api/choice/update/[Choice_ID]/
 * Headers:
 	* Authorization: Token 'userToken'
 * Body:
@@ -97,7 +97,7 @@ python manage.py runserver
 
 ### Delete Choice
 * Request method: DELETE
-* URL: http://localhost:8000/api/choice/delete/<Choice ID>/
+* URL: http://localhost:8000/api/choice/delete/[Choice_ID]/
 * Headers:
 	* Authorization: Token 'userToken'
 
@@ -111,7 +111,7 @@ python manage.py runserver
 
 ### Answers
 * Request method: POST
-* URL: http://localhost:8000/api/answer/create/<Poll ID>/
+* URL: http://localhost:8000/api/answer/create/[Poll_ID]/
 * Headers:
 	* Authorization: Token 'userToken'
 *Body:
@@ -120,5 +120,10 @@ python manage.py runserver
 	* choice{0,1,2,3,4....}: If the question type is "Many Choice", then depending on the number of choices, the number after the "choice" will increase
   
 
+### User Votes
+* Request method: GET
+* URL: http://localhost:8000/api/user/votes/
+* Headers:
+	* Authorization: Token 'userToken'
 
   
