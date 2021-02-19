@@ -24,7 +24,7 @@ python manage.py runserver
 
 ### Create Poll
 * Request method: POST
-* URL: [http://localhost:8000/api/poll/create/](http://localhost:8000/api/poll/create/)
+* URL: http://localhost:8000/api/poll/create/
 * Headers:
 	* Authorization: Token 'userToken'
 * Body:
@@ -35,7 +35,7 @@ python manage.py runserver
 
 ### Update Poll
 * Request method: PUT
-* URL: [http://localhost:8000/api/poll/update/<Poll ID>/](http://localhost:8000/api/poll/update/<Poll ID>/)
+* URL: http://localhost:8000/api/poll/update/<Poll ID>/
 * Headers:
 	*Authorization: Token 'userToken'
 * Body:
@@ -45,79 +45,79 @@ python manage.py runserver
 
 ### Delete Poll
 * Request method: DELETE
-* URL: [http://localhost:8000/api/poll/delete/<Poll ID>/](http://localhost:8000/api/poll/delete/<Poll ID>/)
+* URL: http://localhost:8000/api/poll/delete/<Poll ID>/
 * Headers:
-			*Authorization: Token 'userToken'
+	*Authorization: Token 'userToken'
 
 
-###Create Question
+### Create Question
 * Request method: POST
-* URL: [http://localhost:8000/api/question/create/<Poll ID>/](http://localhost:8000/api/question/create/<Poll ID>/)
+* URL: http://localhost:8000/api/question/create/<Poll ID>/
 * Headers:
-			*Authorization: Token 'userToken'
+	* Authorization: Token 'userToken'
 * Body:
-      *name: Name of question
-			*type_question: Type of question
+	* name: Name of question
+	* type_question: Type of question
 
 
-###Update Question
+### Update Question
 * Request method: PUT
-* URL: [http://localhost:8000/api/question/update/<Question ID>/](http://localhost:8000/api/question/update/<Question ID>/)
+* URL: http://localhost:8000/api/question/update/<Question ID>/
 * Headers:
-			*Authorization: Token 'userToken'
+	* Authorization: Token 'userToken'
 * Body:
-      *name: Name of question
-			*type_question: Type of question
+	* name: Name of question
+	* type_question: Type of question
 			
 			
-###Delete Question
+### Delete Question
 * Request method: DELETE
-* URL: [http://localhost:8000/api/question/delete/<Question ID>/](http://localhost:8000/api/question/delete/<Question ID>/)
+* URL: http://localhost:8000/api/question/delete/<Question ID>/
 * Headers:
-			*Authorization: Token 'userToken'
+	* Authorization: Token 'userToken'
 
 
-###Create Choice
+### Create Choice
 * Request method: POST
-* URL: [http://localhost:8000/api/choice/create/<Question ID>/](http://localhost:8000/api/choice/create/<Question ID>/)
+* URL: http://localhost:8000/api/choice/create/<Question ID>/
 * Headers:
-			*Authorization: Token 'userToken'
+	* Authorization: Token 'userToken'
 * Body:
-      *text: Text of the choice
+	* text: Text of the choice
 
 
-###Update Choice
+### Update Choice
 * Request method: PUT
-* URL: [http://localhost:8000/api/choice/update/<Choice ID>/](http://localhost:8000/api/choice/update/<Choice ID>/)
+* URL: http://localhost:8000/api/choice/update/<Choice ID>/
 * Headers:
-			*Authorization: Token 'userToken'
+	* Authorization: Token 'userToken'
 * Body:
-      *text: Text of the choice
+	* text: Text of the choice
 
 
-###Delete Choice
+### Delete Choice
 * Request method: DELETE
-* URL: [http://localhost:8000/api/choice/delete/<Choice ID>/](http://localhost:8000/api/choice/delete/<Choice ID>/)
+* URL: http://localhost:8000/api/choice/delete/<Choice ID>/
 * Headers:
-			*Authorization: Token 'userToken'
+	* Authorization: Token 'userToken'
 
 
-###Active Polls
+### Active Polls
 * Request method: GET
-* URL: [http://localhost:8000/api/polls/active/](http://localhost:8000/api/polls/active/)
+* URL: http://localhost:8000/api/polls/active/
 * Headers:
-			*Authorization: Token 'userToken'
+	* Authorization: Token 'userToken'
 
 
-###Answers
+### Answers
 * Request method: POST
-* URL: [http://localhost:8000/api/answer/create/<Poll ID>/](http://localhost:8000/api/answer/create/<Poll ID>/)
+* URL: http://localhost:8000/api/answer/create/<Poll ID>/
 * Headers:
-			*Authorization: Token 'userToken'
+	* Authorization: Token 'userToken'
 *Body:
-			*text{0,1,2,4....}: If the question type is "Text Answer", then depending on the number of questions, the number after the "text" will increase
-			*name: If the question type is "One Choice" 
-			*choice{0,1,2,3,4....}: If the question type is "Many Choice", then depending on the number of choices, the number after the "choice" will increase
+	* text{0,1,2,4....}: If the question type is "Text Answer", then depending on the number of questions, the number after the "text" will increase 
+	* name: If the question type is "One Choice" 
+	* choice{0,1,2,3,4....}: If the question type is "Many Choice", then depending on the number of choices, the number after the "choice" will increase
   
 
 
