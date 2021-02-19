@@ -35,7 +35,7 @@ python manage.py runserver
 
 ### Update Poll
 * Request method: PUT
-* URL: http://localhost:8000/api/poll/update/<Poll ID>/
+* URL: http://localhost:8000/api/poll/update/[Poll ID]/
 * Headers:
 	* Authorization: Token 'userToken'
 * Body:
@@ -45,14 +45,14 @@ python manage.py runserver
 
 ### Delete Poll
 * Request method: DELETE
-* URL: http://localhost:8000/api/poll/delete/<Poll ID>/
+* URL: http://localhost:8000/api/poll/delete/[Poll ID]/
 * Headers:
 	* Authorization: Token 'userToken'
 
 
 ### Create Question
 * Request method: POST
-* URL: http://localhost:8000/api/question/create/<Poll ID>/
+* URL: http://localhost:8000/api/question/create/[Poll ID]/
 * Headers:
 	* Authorization: Token 'userToken'
 * Body:
@@ -62,7 +62,7 @@ python manage.py runserver
 
 ### Update Question
 * Request method: PUT
-* URL: http://localhost:8000/api/question/update/<Question ID>/
+* URL: http://localhost:8000/api/question/update/[Question ID]/
 * Headers:
 	* Authorization: Token 'userToken'
 * Body:
