@@ -30,14 +30,14 @@ python manage.py runserver
 * Body:
 	* name: Name of poll
 	* date_end: Poll end date, format: YYYY-MM-DD HH:MM:SS
-	*description: Description of poll
+	* description: Description of poll
 
 
 ### Update Poll
 * Request method: PUT
 * URL: http://localhost:8000/api/poll/update/<Poll ID>/
 * Headers:
-	*Authorization: Token 'userToken'
+	* Authorization: Token 'userToken'
 * Body:
 	* name: Name of poll
 	* description: Description of poll
@@ -47,7 +47,7 @@ python manage.py runserver
 * Request method: DELETE
 * URL: http://localhost:8000/api/poll/delete/<Poll ID>/
 * Headers:
-	*Authorization: Token 'userToken'
+	* Authorization: Token 'userToken'
 
 
 ### Create Question
